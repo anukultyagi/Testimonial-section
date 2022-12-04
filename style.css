@@ -210,7 +210,7 @@ span {
 
 }
 
-@media only screen and (max-width: 850px) and (min-width: 700px) {
+@media only screen and (max-width: 850px) and (min-width: 375px) {
     .person {
         padding: 10px 10px;
     }
@@ -233,49 +233,3 @@ span {
 
 }
 
-@media only screen and (max-width: 750px) and (min-width: 375px) {
-    .container {
-        width: 90%;
-        margin: 50px auto;
-        text-align: center;
-    }
-
-    .top-row {
-        display: block;
-    }
-
-    .heading {
-        width: 100%;
-    }
-
-    .ratings {
-        display: flex;
-        width: 100%;
-        padding: 0;
-        background-color: var(--Light--Grayish-Magenta);
-        border-radius: 10px;
-    }
-
-    .rating {
-        align-items: center;
-        padding: 10px;
-        display: block;
-
-    }
-
-    .first,
-    .second,
-    .third {
-        margin: 20px auto;
-
-    }
-
-    .stars {
-        margin: 10px auto;
-    }
-
-    .rating-text {
-        margin: 10px;
-    }
-
-}
