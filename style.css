@@ -1,0 +1,281 @@
+/* Made by ❤ from Anukul Tyagi */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light--Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    font-family: 'League Spartan', sans-serif;
+    background-image: url(images/bg-pattern-top-desktop.svg),
+        url(images/bg-pattern-bottom-desktop.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat, repeat;
+
+
+}
+
+/* Main-Body  */
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+
+.top-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.heading {
+    width: 40%;
+}
+
+.title {
+    font-size: 50px;
+    color: var(--Very-Dark-Magenta);
+
+}
+
+.desc {
+    margin: 20px 0;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: var(--Dark-Grayish-Magenta);
+
+}
+
+.ratings {
+
+    width: 60%;
+    padding: 10px 50px;
+
+}
+
+.rating {
+    display: flex;
+    align-items: right;
+    background-color: var(--Light--Grayish-Magenta);
+    padding: 15px 30px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.first {
+    margin-left: 5%;
+}
+
+.second {
+    margin-left: 10%;
+}
+
+.third {
+    margin-left: 15%;
+}
+
+.rating-text {
+    color: var(--Very-Dark-Magenta);
+    font-weight: 700;
+    margin-left: 20px;
+}
+
+/* testimonial-section  */
+.testimonials {
+    display: flex;
+
+}
+
+.person {
+    background-color: var(--Very-Dark-Magenta);
+    margin: 20px;
+    border-radius: 10px;
+    color: var(--White);
+    padding: 20px 35px;
+}
+
+#person-1 {
+    position: relative;
+
+}
+
+#person-2 {
+    position: relative;
+    top: 20px;
+
+}
+
+#person-3 {
+    top: 40px;
+    position: relative;
+
+}
+
+.card-head {
+    display: flex;
+}
+
+span {
+    margin: auto 20px;
+}
+
+.person-img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.name {
+    color: var(--white);
+    font-weight: 700;
+
+}
+
+.verified {
+    color: var(--Soft-Pink);
+    margin-top: 5px;
+}
+
+.comment {
+    margin: 20px 0;
+    font-size: 15px;
+    word-spacing: 1px;
+    line-height: 20px;
+}
+
+@media only screen and (max-width: 375px) {
+    .container {
+        width: 100%;
+        margin: 20px auto;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .top-row {
+        display: block;
+        margin: 20px 10px;
+
+    }
+
+    .heading {
+        width: 100%;
+
+
+    }
+
+    .title {
+        font-size: 30px;
+        margin: 0 50px;
+    }
+
+    .ratings {
+        width: 100%;
+        padding: 0%;
+    }
+
+    .rating {
+        display: block;
+        align-items: center;
+        width: 100%;
+        padding: 10px;
+        margin: 20px auto;
+    }
+
+    .first,
+    .second,
+    .third {
+        margin: 0%;
+    }
+
+    .stars {
+        padding: 10px;
+    }
+
+    .testimonials {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 850px) and (min-width: 700px) {
+    .person {
+        padding: 10px 10px;
+    }
+
+    .card-head {
+        display: block;
+        text-align: center;
+
+    }
+
+    .span {
+        margin: 0%;
+    }
+
+    #person-1,
+    #person-2,
+    #person-3 {
+        top: 0%;
+    }
+
+}
+
+@media only screen and (max-width: 750px) and (min-width: 375px) {
+    .container {
+        width: 90%;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    .top-row {
+        display: block;
+    }
+
+    .heading {
+        width: 100%;
+    }
+
+    .ratings {
+        display: flex;
+        width: 100%;
+        padding: 0;
+        background-color: var(--Light--Grayish-Magenta);
+        border-radius: 10px;
+    }
+
+    .rating {
+        align-items: center;
+        padding: 10px;
+        display: block;
+
+    }
+
+    .first,
+    .second,
+    .third {
+        margin: 20px auto;
+
+    }
+
+    .stars {
+        margin: 10px auto;
+    }
+
+    .rating-text {
+        margin: 10px;
+    }
+
+}
